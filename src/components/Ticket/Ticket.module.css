@@ -1,0 +1,49 @@
+.ticket {
+  min-height: 368px;
+  padding: 14px 11px 24px 11px;
+
+  border-radius: 5px;
+  background-color: var(--bg-primary);
+}
+
+.ticket__fields {
+  margin-bottom: 23px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ticket__btn {
+  margin: 0 auto;
+  padding: 13px 21px;
+
+  display: block;
+
+  border-radius: 40px;
+  border: 1px solid var(--border-primary);
+  background-color: var(--bg-primary);
+
+  line-height: 16px;
+  color: var(--text-secondary);
+}
+
+.ticket__btn:hover {
+  background-color: var(--bg-primary-hover);
+}
+
+.error_test {
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.disabled {
+  background-color: var(--bg-disabled);
+}
+
+.disabled:hover {
+  background-color: var(--bg-disabled-hover);
+}
