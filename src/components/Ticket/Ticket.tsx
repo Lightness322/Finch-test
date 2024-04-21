@@ -75,7 +75,12 @@ export default function Ticket() {
             {gameInfo.isLoading ? "Загрузка..." : "Показать результат"}
           </button>
           <div className={styles.error_test}>
-            <input type="checkbox" id="checkbox" onChange={handleChange} />
+            <input
+              type="checkbox"
+              id="checkbox"
+              onChange={handleChange}
+              checked={isError}
+            />
             <label htmlFor="checkbox">Получить ошибку при запросе</label>
           </div>
         </>
