@@ -14,11 +14,10 @@ export default function TicketSelectItem({
   }
 
   return (
-    <li
-      onClick={handleClick}
-      className={`${styles.item} ${isSelected ? styles.selected : ""}`}
-    >
-      {number}
+    <li className={`${styles.item} ${isSelected ? styles.selected : ""}`}>
+      <button className={styles.btn} onClick={handleClick}>
+        {number}
+      </button>
     </li>
   )
 }
